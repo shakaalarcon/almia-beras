@@ -13,3 +13,7 @@ Route::get('/home', function () {
 Route::get('/beras', function () {
     return view('beras');
 });
+
+Route::get('/category', function () {
+    return view('category');
+});
