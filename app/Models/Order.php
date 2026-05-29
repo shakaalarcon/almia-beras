@@ -14,9 +14,7 @@ class Order extends Model
     protected $fillable = [
         'order_number',
         'customer_id',
-        'coupon_id',
         'subtotal',
-        'discount_amount',
         'shipping_cost',
         'tax_amount',
         'total',
@@ -33,7 +31,6 @@ class Order extends Model
         'transaction_id',
         'status',
         'tracking_number',
-        'customer_notes',
         'admin_notes',
     ];
  /**

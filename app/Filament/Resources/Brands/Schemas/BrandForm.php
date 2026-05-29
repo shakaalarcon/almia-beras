@@ -37,9 +37,6 @@ class BrandForm
                             ->maxSize(2048)
                             ->imageEditor()
                             ->default(null),
-                        TextInput::make('website')
-                            ->url()
-                            ->placeholder('https://example.com'),
                     ]),
                 Section::make('Display Settings')
                     ->schema([
