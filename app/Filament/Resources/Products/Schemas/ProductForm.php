@@ -94,20 +94,20 @@ class ProductForm
                                             ->numeric()
                                             ->minValue(0)
                                             ->step(0.01)
-                                            ->helperText('Selling Price') // $40 %10 OFF 
-                                            ->prefix('$'),
+                                            ->helperText('Selling Price') 
+                                            ->prefix('IDR'),
                                         TextInput::make('compare_price')
                                             ->numeric()
                                             ->minValue(0)
                                             ->step(0.01)
-                                            ->helperText('Original price to show discount') // $50
-                                            ->prefix('$'),
+                                            ->helperText('Original price to show discount') 
+                                            ->prefix('IDR'),
                                         TextInput::make('cost_price')
                                             ->numeric()
                                             ->minValue(0)
                                             ->step(0.01)
                                             ->helperText('cost from supplier (for profit calculations)')
-                                            ->prefix('$'),
+                                            ->prefix('IDR'),
                                     ])->columns(2),
                                 Section::make('Inventory')
                                     ->schema([
@@ -205,14 +205,14 @@ class ProductForm
                                                 TextInput::make('price')
                                                     ->required()
                                                     ->numeric()
-                                                    ->prefix('$')
+                                                    ->prefix('IDR')
                                                     ->minValue(0)
                                                     ->step(0.01),
 
                                                 TextInput::make('compare_price')
                                                     ->label('Compare Price')
                                                     ->numeric()
-                                                    ->prefix('$')
+                                                    ->prefix('IDR')
                                                     ->minValue(0)
                                                     ->step(0.01),
 
